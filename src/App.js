@@ -12,7 +12,7 @@ const App = () => {
     e.preventDefault();
     console.log('submititng')
 
-    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&APPID=8c55d26e5667c8045480c6123909c76f`
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&APPID='your api key`
 
     const response = await fetch(url);
     const data = await response.json();
